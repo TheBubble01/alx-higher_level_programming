@@ -4,20 +4,21 @@ number = random.randint(-10000, 10000)
 # YOUR CODE HERE
 
 if number >= 0:
-    last = number%10
+    last = number % 10
     if last > 5:
-        print('Last digit of {} is {} and is greater than 5'.format(number, last))
+        string1 = 'and is greater than 5'
+        print('Last digit of {} is {} {}'.format(number, last, string1))
     elif last == 0:
         print('Last digit of {} is {} and is 0'.format(number, last))
     else:
-        print('Last digit of {} is {} and is less than 6 and not 0'.format(number, last))
+        string2 = 'and is less than 6 and not 0'
+        print('Last digit of {} is {} {}'.format(number, last, string2))
 
 else:
     conv = -1 * number
-    last = conv%10
-    if last > 5:
-        print('Last digit of {} is {} and is greater than 5'.format(number, -1 * last))
-    elif last == 0:
-        print('Last digit of {} is {} and is 0'.format(number, -1 * last))
+    last = -1 * (conv % 10)
+    if last == 0:
+        print('Last digit of {} is {} and is 0'.format(number, last))
     else:
-        print('Last digit of {} is {} and is less than 6 and not 0'.format(number, -1 * last))
+        string2 = 'and is less than 6 and not 0'
+        print('Last digit of {} is {} {}'.format(number, last, string2))
