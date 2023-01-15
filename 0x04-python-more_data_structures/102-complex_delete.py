@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def complex_delete(a_dictionary, value):
-    li =[]
+    li = []
     for k in a_dictionary:
         if a_dictionary[k] == value:
             li.append(k)
